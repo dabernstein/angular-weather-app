@@ -5,7 +5,7 @@ import { fromEvent } from 'rxjs'
 @Directive({
   selector: '[appForcastSlider]'
 })
-export class ForcastSliderDirective {
+export class ForecastSliderDirective {
 
   constructor(private slider: ElementRef) { }
   
