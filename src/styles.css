@@ -88,6 +88,53 @@ body {
     font-weight: 900;
 }
 
+.hour-forcast {
+    display: flex;
+    flex: 1;
+    background-color: var(--shadow-light);
+    border-radius: 20px;
+    margin-top: 1em;
+    min-height: 5em;
+    max-height: 7em;
+    overflow-x: scroll;
+    justify-content: center;
+    align-items: center;
+    scrollbar-width: none;
+}
+
+.hour-forcast::-webkit-scrollbar {
+    display: none;
+}
+
+.hour-forcast-info::-webkit-scrollbar {
+    display: none;
+}
+
+.hour-forcast-info {
+    display: flex;
+    position: relative;
+    overflow-x: scroll;
+    cursor: pointer;
+    flex-direction: row;
+}
+
+.hour-forcast-info.active {
+    cursor: grab;
+    cursor: -webkit-grabbing;
+}
+
+.hour-info {
+    padding: 1em;
+}
+
+.hour {
+    color: var(--white);
+}
+
+.hour-temp {
+    color: var(--white);
+}
+
 .more-info-label {
     color: var(--white);
 }
@@ -95,10 +142,8 @@ body {
 .more-info-container {
     flex: 1;
     background-color: var(--shadow-light);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 20px;
     margin-top: 1em;
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
