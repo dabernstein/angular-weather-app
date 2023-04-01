@@ -1,6 +1,4 @@
 import { Directive, ElementRef, HostListener } from '@angular/core';
-import { Observable } from 'rxjs/internal/Observable';
-import { fromEvent } from 'rxjs'
 
 @Directive({
   selector: '[appForcastSlider]'
