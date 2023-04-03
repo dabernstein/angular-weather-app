@@ -1,7 +1,7 @@
 import { Directive, ElementRef, HostListener } from '@angular/core';
 
 @Directive({
-  selector: '[appForcastSlider]'
+  selector: '[appForecastSlider]'
 })
 export class ForecastSliderDirective {
 

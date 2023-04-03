@@ -16,7 +16,7 @@ export class WeatherService {
       params: new HttpParams()
       .set('key', environment.APIKey)
       .set('q', cityName)
-      .set('days', '1')
+      .set('days', '2')
       .set('aqi', 'no')
       .set('alets', 'no')
     })

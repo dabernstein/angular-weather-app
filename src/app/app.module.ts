@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ForecastSliderDirective } from './directives/forecast-slider.directive';
+import { ForecastDirective } from './directives/forecast.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ForecastSliderDirective
+    ForecastSliderDirective,
+    ForecastDirective
   ],
   imports: [
     BrowserModule,
